@@ -1,7 +1,8 @@
 #!/usr/bin/python
 
 # Import SystemRandom for secure cryptography
-import random
+#from import random
+from random import SystemRandom
 
 # Specify dictionary file
 # This dictionary file was taken from the following GitHub repo: https://github.com/first20hours/google-10000-english
@@ -15,10 +16,12 @@ dictObj = open(dictionary)
 
 # Create dictionary list object
 dictList = list(dictObj)
+dictLen = len(dictList)
 
+# Generate password function
 def genPassword(dlist, pwlist):
     for i in range(numWords):
-        pwlist.append(random.choice(dlist))
+        pwlist.append(dlist[SystemRandom().randrange(dictLen)])
     return pwlist
 
 # Generate password
