@@ -4,7 +4,8 @@
 import random
 
 # Specify dictionary file
-dictionary="/usr/share/dict/words"
+# This dictionary file was taken from the following GitHub repo: https://github.com/first20hours/google-10000-english
+dictionary="./wordlist"
 
 # Specify number of words in password
 numWords = 4
