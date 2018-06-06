@@ -28,5 +28,16 @@ def genPassword(dlist, pwlist):
 password = []
 password = genPassword(dictList, password)
 
+print(" ")
+print("- - - - - - - - -")
+print("Your secure password for the day is...")
+print("- - - - - - - - -")
+print(" ")
 for i in password:
     print(i)
+
+print("- - - - - - - - -")
+print("We recommend adding some capitalzation somewhere, ")
+print(" and punctuation or special chars and a number.")
+print("Thank you for caring about security.")
+print("- - - - - - - - -")
